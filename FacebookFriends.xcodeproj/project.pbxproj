@@ -3,27 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		95B1E35726D7737E00B7526E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E35626D7737E00B7526E /* AppDelegate.swift */; };
 		95B1E35926D7737E00B7526E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E35826D7737E00B7526E /* SceneDelegate.swift */; };
-		95B1E35B26D7737E00B7526E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E35A26D7737E00B7526E /* ViewController.swift */; };
+		95B1E35B26D7737E00B7526E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E35A26D7737E00B7526E /* LoginViewController.swift */; };
 		95B1E35E26D7737E00B7526E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B1E35C26D7737E00B7526E /* Main.storyboard */; };
 		95B1E36026D7738700B7526E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95B1E35F26D7738700B7526E /* Assets.xcassets */; };
 		95B1E36326D7738700B7526E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B1E36126D7738700B7526E /* LaunchScreen.storyboard */; };
+		95B1E36F26D7761900B7526E /* LoginContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E36E26D7761900B7526E /* LoginContracts.swift */; };
+		95B1E37126D7762800B7526E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E37026D7762800B7526E /* LoginViewModel.swift */; };
+		95B1E37626D7767D00B7526E /* CaseSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 95B1E37526D7767D00B7526E /* CaseSPM */; };
+		95B1E37926D776B100B7526E /* BaseUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E37826D776B100B7526E /* BaseUIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		95B1E35326D7737E00B7526E /* FacebookFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FacebookFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95B1E35626D7737E00B7526E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95B1E35826D7737E00B7526E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		95B1E35A26D7737E00B7526E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95B1E35A26D7737E00B7526E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		95B1E35D26D7737E00B7526E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95B1E35F26D7738700B7526E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95B1E36226D7738700B7526E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95B1E36426D7738700B7526E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95B1E36E26D7761900B7526E /* LoginContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContracts.swift; sourceTree = "<group>"; };
+		95B1E37026D7762800B7526E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		95B1E37826D776B100B7526E /* BaseUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95B1E37626D7767D00B7526E /* CaseSPM in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +68,7 @@
 				95B1E35626D7737E00B7526E /* AppDelegate.swift */,
 				95B1E35826D7737E00B7526E /* SceneDelegate.swift */,
 				95B1E36A26D774E500B7526E /* Assets */,
+				95B1E37726D7768A00B7526E /* Abstract Classes */,
 				95B1E36B26D7750300B7526E /* Scenes */,
 			);
 			path = FacebookFriends;
@@ -78,9 +87,43 @@
 		95B1E36B26D7750300B7526E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				95B1E35A26D7737E00B7526E /* ViewController.swift */,
+				95B1E36D26D775B200B7526E /* Login */,
+				95B1E37226D7762F00B7526E /* Main */,
+				95B1E37326D7763800B7526E /* Detail */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		95B1E36D26D775B200B7526E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				95B1E36E26D7761900B7526E /* LoginContracts.swift */,
+				95B1E35A26D7737E00B7526E /* LoginViewController.swift */,
+				95B1E37026D7762800B7526E /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		95B1E37226D7762F00B7526E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		95B1E37326D7763800B7526E /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		95B1E37726D7768A00B7526E /* Abstract Classes */ = {
+			isa = PBXGroup;
+			children = (
+				95B1E37826D776B100B7526E /* BaseUIViewController.swift */,
+			);
+			path = "Abstract Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +142,9 @@
 			dependencies = (
 			);
 			name = FacebookFriends;
+			packageProductDependencies = (
+				95B1E37526D7767D00B7526E /* CaseSPM */,
+			);
 			productName = FacebookFriends;
 			productReference = 95B1E35326D7737E00B7526E /* FacebookFriends.app */;
 			productType = "com.apple.product-type.application";
@@ -126,6 +172,9 @@
 				Base,
 			);
 			mainGroup = 95B1E34A26D7737E00B7526E;
+			packageReferences = (
+				95B1E37426D7767D00B7526E /* XCRemoteSwiftPackageReference "CaseSPM" */,
+			);
 			productRefGroup = 95B1E35426D7737E00B7526E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -153,8 +202,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95B1E35B26D7737E00B7526E /* ViewController.swift in Sources */,
+				95B1E35B26D7737E00B7526E /* LoginViewController.swift in Sources */,
+				95B1E36F26D7761900B7526E /* LoginContracts.swift in Sources */,
 				95B1E35726D7737E00B7526E /* AppDelegate.swift in Sources */,
+				95B1E37926D776B100B7526E /* BaseUIViewController.swift in Sources */,
+				95B1E37126D7762800B7526E /* LoginViewModel.swift in Sources */,
 				95B1E35926D7737E00B7526E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +409,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		95B1E37426D7767D00B7526E /* XCRemoteSwiftPackageReference "CaseSPM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/barangngr/CaseSPM.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		95B1E37526D7767D00B7526E /* CaseSPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95B1E37426D7767D00B7526E /* XCRemoteSwiftPackageReference "CaseSPM" */;
+			productName = CaseSPM;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 95B1E34B26D7737E00B7526E /* Project object */;
 }
