@@ -24,7 +24,7 @@ class LoginViewController: BaseUIViewController {
   
   // MARK: Functions
   private func showMainViewController() {
-//    navigationController?.show(MainViewController(), sender: nil)
+    navigationController?.show(MainViewController(), sender: nil)
   }
   
   private func checkUserAuth() {
