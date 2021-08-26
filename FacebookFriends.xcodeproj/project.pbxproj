@@ -17,6 +17,9 @@
 		95B1E37126D7762800B7526E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E37026D7762800B7526E /* LoginViewModel.swift */; };
 		95B1E37626D7767D00B7526E /* CaseSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 95B1E37526D7767D00B7526E /* CaseSPM */; };
 		95B1E37926D776B100B7526E /* BaseUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E37826D776B100B7526E /* BaseUIViewController.swift */; };
+		95B1E37C26D778D100B7526E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E37B26D778D100B7526E /* UIColor.swift */; };
+		95B1E37E26D798A100B7526E /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E37D26D798A100B7526E /* UIViewController.swift */; };
+		95B1E38126D7995400B7526E /* GeneralError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E38026D7995400B7526E /* GeneralError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		95B1E36E26D7761900B7526E /* LoginContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContracts.swift; sourceTree = "<group>"; };
 		95B1E37026D7762800B7526E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		95B1E37826D776B100B7526E /* BaseUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIViewController.swift; sourceTree = "<group>"; };
+		95B1E37B26D778D100B7526E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		95B1E37D26D798A100B7526E /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		95B1E38026D7995400B7526E /* GeneralError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,8 @@
 				95B1E36A26D774E500B7526E /* Assets */,
 				95B1E37726D7768A00B7526E /* Abstract Classes */,
 				95B1E36B26D7750300B7526E /* Scenes */,
+				95B1E37F26D7992500B7526E /* Utils */,
+				95B1E37A26D7789500B7526E /* Extensions */,
 			);
 			path = FacebookFriends;
 			sourceTree = "<group>";
@@ -124,6 +132,23 @@
 				95B1E37826D776B100B7526E /* BaseUIViewController.swift */,
 			);
 			path = "Abstract Classes";
+			sourceTree = "<group>";
+		};
+		95B1E37A26D7789500B7526E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				95B1E37B26D778D100B7526E /* UIColor.swift */,
+				95B1E37D26D798A100B7526E /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		95B1E37F26D7992500B7526E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				95B1E38026D7995400B7526E /* GeneralError.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,11 +228,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				95B1E35B26D7737E00B7526E /* LoginViewController.swift in Sources */,
+				95B1E37C26D778D100B7526E /* UIColor.swift in Sources */,
 				95B1E36F26D7761900B7526E /* LoginContracts.swift in Sources */,
 				95B1E35726D7737E00B7526E /* AppDelegate.swift in Sources */,
 				95B1E37926D776B100B7526E /* BaseUIViewController.swift in Sources */,
 				95B1E37126D7762800B7526E /* LoginViewModel.swift in Sources */,
+				95B1E37E26D798A100B7526E /* UIViewController.swift in Sources */,
 				95B1E35926D7737E00B7526E /* SceneDelegate.swift in Sources */,
+				95B1E38126D7995400B7526E /* GeneralError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

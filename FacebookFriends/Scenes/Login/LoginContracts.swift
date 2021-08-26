@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+enum LoginViewModelOutput {
+  case didLogin(_ result: Result<Void, Error>)
+}
+
+protocol LoginViewModelDelegete: AnyObject {
+  func handleOutput(_ output: LoginViewModelOutput)
+}
