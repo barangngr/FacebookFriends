@@ -36,6 +36,7 @@
 		95B1E39E26DA7C2400B7526E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E39D26DA7C2400B7526E /* DetailViewController.swift */; };
 		95B1E3A426DA7CA100B7526E /* BackButtonPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E3A326DA7CA100B7526E /* BackButtonPresentable.swift */; };
 		95B1E3A626DA891000B7526E /* DetailLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E3A526DA890F00B7526E /* DetailLabel.swift */; };
+		95B1E3A926DA9B4800B7526E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E3A826DA9B4800B7526E /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		95B1E39D26DA7C2400B7526E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		95B1E3A326DA7CA100B7526E /* BackButtonPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonPresentable.swift; sourceTree = "<group>"; };
 		95B1E3A526DA890F00B7526E /* DetailLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLabel.swift; sourceTree = "<group>"; };
+		95B1E3A826DA9B4800B7526E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		DEB5C3C84255DD461BA33C5A /* Pods-FacebookFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookFriends.debug.xcconfig"; path = "Target Support Files/Pods-FacebookFriends/Pods-FacebookFriends.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +148,7 @@
 				95B1E36D26D775B200B7526E /* Login */,
 				95B1E37226D7762F00B7526E /* Main */,
 				95B1E37326D7763800B7526E /* Detail */,
+				95B1E3A726DA9B2400B7526E /* Map */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -233,6 +236,14 @@
 				95B1E3A526DA890F00B7526E /* DetailLabel.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		95B1E3A726DA9B2400B7526E /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				95B1E3A826DA9B4800B7526E /* MapViewController.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		B718A38BEE48694DC6F1BEAE /* Pods */ = {
@@ -372,6 +383,7 @@
 				95B1E38C26D7D5DA00B7526E /* LoadingViewPresentable.swift in Sources */,
 				95B1E36F26D7761900B7526E /* LoginContracts.swift in Sources */,
 				95B1E35726D7737E00B7526E /* AppDelegate.swift in Sources */,
+				95B1E3A926DA9B4800B7526E /* MapViewController.swift in Sources */,
 				95B1E37926D776B100B7526E /* BaseUIViewController.swift in Sources */,
 				95B1E37126D7762800B7526E /* LoginViewModel.swift in Sources */,
 				95B1E37E26D798A100B7526E /* UIViewController.swift in Sources */,

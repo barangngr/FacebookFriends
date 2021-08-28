@@ -70,6 +70,3 @@ public class LoginModel: Codable {
   public var username: String?
   public var uuid: String?
 }
-
-
-
