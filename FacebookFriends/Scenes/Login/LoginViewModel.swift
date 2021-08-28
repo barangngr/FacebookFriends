@@ -15,10 +15,11 @@ class LoginViewModel {
   
   
   func checkUserAuth(_ userName: String?, password: String?) {
-    guard let username = userName, let _ = password else {
+    guard let username = userName, let password = password, password.count > 0 else {
       delegate?.handleOutput(.didLogin(.failure(GeneralError.invalidCredentials)))
       return
     }
+    
     let isValid = isValidUsername(username)
     isValid ? delegate?.handleOutput(.didLogin(.success(()))) : delegate?.handleOutput(.didLogin(.failure(GeneralError.invalidAuth)))
   }
