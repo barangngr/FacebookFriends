@@ -20,6 +20,21 @@ public class UserListResponseModel: Codable {
 //  public var id: String?
   public var picture: PictureModel?
   public var nat: String?
+  
+  var isMale: Bool {
+    return gender == "male"
+  }
+  
+  var fullName: String {
+    guard let name = name else { return "" }
+    return "\(name.first ?? "") \(name.last ?? "")"
+  }
+  
+  var address: String {
+    guard let address = location else { return "" }
+    return "\(address.city ?? ""), \(address.state ?? ""), \(address.country ?? "")"
+  }
+  
 }
 
 public class NameModel: Codable {

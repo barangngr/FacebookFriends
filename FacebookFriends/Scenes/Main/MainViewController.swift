@@ -31,15 +31,10 @@ class MainViewController: BaseUIViewController, LoadingViewPresentable {
     super.viewDidLoad()
     view.backgroundColor = .charlestonGreen
     configureNavigationBar()
+    load()
     viewModel.delegate = self
     collectionView.delegate = self
     collectionView.dataSource = self
-  }
-  
-  override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
-    startAnimating()
-    viewModel.fetchFriends()
   }
   
   // MARK: Functions
@@ -56,6 +51,11 @@ class MainViewController: BaseUIViewController, LoadingViewPresentable {
     navigationController?.navigationBar.makeTransparent()
     navigationItem.setHidesBackButton(true, animated: false)
     navigationController?.navigationBar.setTitleFont(UIFont(name: "HelveticaNeue-Bold", size: 23)!, color: .americanRed)
+  }
+  
+  private func load() {
+    startAnimating()
+    viewModel.fetchFriends()
   }
   
 }
@@ -89,8 +89,9 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
   }
   
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//    let targetController = DetailViewController()
-//    navigationController?.show(targetController, sender: nil)
+    let targetController = DetailViewController()
+    targetController.dataSource = dataSource[indexPath.item]
+    navigationController?.show(targetController, sender: nil)
   }
   
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

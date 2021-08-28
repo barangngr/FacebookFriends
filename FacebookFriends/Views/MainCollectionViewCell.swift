@@ -11,7 +11,7 @@ import Kingfisher
 class MainCollectionViewCell: BaseUICollectionViewCell {
   
   // MARK: Properties
-  var imageView = UIImageView().with({
+  private var imageView = UIImageView().with({
     $0.translatesAutoresizingMaskIntoConstraints = false
     $0.contentMode = .scaleAspectFit
     $0.clipsToBounds = true
@@ -58,7 +58,7 @@ class MainCollectionViewCell: BaseUICollectionViewCell {
   
   func configure(with model: UserListResponseModel?) {
     usernameLabel.text = model?.login?.username
-    fullNameLabel.text = "\(model?.name?.first ?? "") \(model?.name?.last ?? "")"
+    fullNameLabel.text = model?.fullName
     imageView.kf.setImage(with: URL(string: model?.picture?.medium ?? ""))
   }
   

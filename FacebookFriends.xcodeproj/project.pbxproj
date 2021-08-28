@@ -16,7 +16,7 @@
 		95B1E36326D7738700B7526E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95B1E36126D7738700B7526E /* LaunchScreen.storyboard */; };
 		95B1E36F26D7761900B7526E /* LoginContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E36E26D7761900B7526E /* LoginContracts.swift */; };
 		95B1E37126D7762800B7526E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E37026D7762800B7526E /* LoginViewModel.swift */; };
-		95B1E37626D7767D00B7526E /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 95B1E37526D7767D00B7526E /* SwiftPackageProductDependency */; };
+		95B1E37626D7767D00B7526E /* CaseSPM in Frameworks */ = {isa = PBXBuildFile; productRef = 95B1E37526D7767D00B7526E /* CaseSPM */; };
 		95B1E37926D776B100B7526E /* BaseUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E37826D776B100B7526E /* BaseUIViewController.swift */; };
 		95B1E37C26D778D100B7526E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E37B26D778D100B7526E /* UIColor.swift */; };
 		95B1E37E26D798A100B7526E /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E37D26D798A100B7526E /* UIViewController.swift */; };
@@ -33,6 +33,9 @@
 		95B1E39826D7DB2100B7526E /* BaseUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E39726D7DB2100B7526E /* BaseUICollectionViewCell.swift */; };
 		95B1E39A26D7DC5C00B7526E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E39926D7DC5C00B7526E /* NetworkManager.swift */; };
 		95B1E39C26D7DC6900B7526E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E39B26D7DC6900B7526E /* API.swift */; };
+		95B1E39E26DA7C2400B7526E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E39D26DA7C2400B7526E /* DetailViewController.swift */; };
+		95B1E3A426DA7CA100B7526E /* BackButtonPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E3A326DA7CA100B7526E /* BackButtonPresentable.swift */; };
+		95B1E3A626DA891000B7526E /* DetailLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E3A526DA890F00B7526E /* DetailLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +67,9 @@
 		95B1E39726D7DB2100B7526E /* BaseUICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUICollectionViewCell.swift; sourceTree = "<group>"; };
 		95B1E39926D7DC5C00B7526E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		95B1E39B26D7DC6900B7526E /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		95B1E39D26DA7C2400B7526E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		95B1E3A326DA7CA100B7526E /* BackButtonPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonPresentable.swift; sourceTree = "<group>"; };
+		95B1E3A526DA890F00B7526E /* DetailLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLabel.swift; sourceTree = "<group>"; };
 		DEB5C3C84255DD461BA33C5A /* Pods-FacebookFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookFriends.debug.xcconfig"; path = "Target Support Files/Pods-FacebookFriends/Pods-FacebookFriends.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95B1E37626D7767D00B7526E /* BuildFile in Frameworks */,
+				95B1E37626D7767D00B7526E /* CaseSPM in Frameworks */,
 				68063F747580804FB61E8AFD /* Pods_FacebookFriends.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,6 +173,7 @@
 		95B1E37326D7763800B7526E /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				95B1E39D26DA7C2400B7526E /* DetailViewController.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -204,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				95B1E38B26D7D5DA00B7526E /* LoadingViewPresentable.swift */,
+				95B1E3A326DA7CA100B7526E /* BackButtonPresentable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -222,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				95B1E39526D7DAF200B7526E /* MainCollectionViewCell.swift */,
+				95B1E3A526DA890F00B7526E /* DetailLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -232,7 +241,6 @@
 				DEB5C3C84255DD461BA33C5A /* Pods-FacebookFriends.debug.xcconfig */,
 				5557BDCCD444061F5576CA69 /* Pods-FacebookFriends.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -255,7 +263,7 @@
 			);
 			name = FacebookFriends;
 			packageProductDependencies = (
-				95B1E37526D7767D00B7526E /* SwiftPackageProductDependency */,
+				95B1E37526D7767D00B7526E /* CaseSPM */,
 			);
 			productName = FacebookFriends;
 			productReference = 95B1E35326D7737E00B7526E /* FacebookFriends.app */;
@@ -285,7 +293,7 @@
 			);
 			mainGroup = 95B1E34A26D7737E00B7526E;
 			packageReferences = (
-				95B1E37426D7767D00B7526E /* RemoteSwiftPackageReference */,
+				95B1E37426D7767D00B7526E /* XCRemoteSwiftPackageReference "CaseSPM" */,
 			);
 			productRefGroup = 95B1E35426D7737E00B7526E /* Products */;
 			projectDirPath = "";
@@ -367,6 +375,8 @@
 				95B1E37926D776B100B7526E /* BaseUIViewController.swift in Sources */,
 				95B1E37126D7762800B7526E /* LoginViewModel.swift in Sources */,
 				95B1E37E26D798A100B7526E /* UIViewController.swift in Sources */,
+				95B1E3A626DA891000B7526E /* DetailLabel.swift in Sources */,
+				95B1E39E26DA7C2400B7526E /* DetailViewController.swift in Sources */,
 				95B1E35926D7737E00B7526E /* SceneDelegate.swift in Sources */,
 				95B1E39A26D7DC5C00B7526E /* NetworkManager.swift in Sources */,
 				95B1E39C26D7DC6900B7526E /* API.swift in Sources */,
@@ -377,6 +387,7 @@
 				95B1E38326D7D45300B7526E /* MainViewController.swift in Sources */,
 				95B1E38726D7D47C00B7526E /* MainViewModel.swift in Sources */,
 				95B1E38F26D7D7BD00B7526E /* UserListResponseModel.swift in Sources */,
+				95B1E3A426DA7CA100B7526E /* BackButtonPresentable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,7 +593,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		95B1E37426D7767D00B7526E /* RemoteSwiftPackageReference */ = {
+		95B1E37426D7767D00B7526E /* XCRemoteSwiftPackageReference "CaseSPM" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/barangngr/CaseSPM.git";
 			requirement = {
@@ -593,9 +604,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		95B1E37526D7767D00B7526E /* SwiftPackageProductDependency */ = {
+		95B1E37526D7767D00B7526E /* CaseSPM */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 95B1E37426D7767D00B7526E /* RemoteSwiftPackageReference */;
+			package = 95B1E37426D7767D00B7526E /* XCRemoteSwiftPackageReference "CaseSPM" */;
 			productName = CaseSPM;
 		};
 /* End XCSwiftPackageProductDependency section */
