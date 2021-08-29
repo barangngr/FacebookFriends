@@ -117,16 +117,12 @@ class DetailViewController: BaseUIViewController, BackButtonPresentable {
   // MARK: Actions
   @objc func locataionButtonAction(_ sender: UIButton) {
     guard let coordinate = dataSource?.location?.coordinates else { return }
+    let dbLat = Double(coordinate.latitude ?? "") ?? 0.0
+    let dbLong = Double(coordinate.longitude ?? "") ?? 0.0
+    let data = MapViewCoordinateModel(name: dataSource?.fullName, lat: dbLat, long: dbLong)
     let targetController = MapViewController()
-    targetController.model = coordinate
+    targetController.model = data
     navigationController?.show(targetController, sender: nil)
   }
   
-}
-
-
-struct MapViewModel {
-  var name: String?
-  var lat: Double?
-  var long: Double?
 }

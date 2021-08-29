@@ -18,19 +18,14 @@ class MapViewController: BaseUIViewController, BackButtonPresentable {
     $0.isScrollEnabled = true
   })
   
-  var model: CoordinateModel?
+  let annotations = MKPointAnnotation()
+  var model: MapViewCoordinateModel?
   
   // MARK: LifeCycle
   override func viewDidLoad() {
     super.viewDidLoad()
     configureBackButton()
-    
-    let annotations = MKPointAnnotation()
-    annotations.title = "12312312"
-    let dbLat = Double(model?.latitude ?? "") ?? 0.0
-    let dbLong = Double(model?.longitude ?? "") ?? 0.0
-    annotations.coordinate = CLLocationCoordinate2D(latitude: dbLat, longitude: dbLong)
-    mapView.addAnnotation(annotations)
+    configureMap()
   }
   
   // MARK: Functions
@@ -39,6 +34,18 @@ class MapViewController: BaseUIViewController, BackButtonPresentable {
     mapView.fill(.horizontally)
     mapView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
     mapView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+  }
+  
+  private func configureMap() {
+    guard let model = model else { return }
+    annotations.title = model.name
+    annotations.coordinate = CLLocationCoordinate2D(latitude: model.lat, longitude: model.long)
+    mapView.addAnnotation(annotations)
+    
+    let region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: model.lat, longitude: model.long), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
+    DispatchQueue.main.async {
+      self.mapView.setRegion(region, animated: true)
+    }
   }
   
 }

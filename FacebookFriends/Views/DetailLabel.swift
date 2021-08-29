@@ -24,7 +24,7 @@ class DetailLabel: UILabel {
     self.textColor = .white
     self.textAlignment = .left
     self.numberOfLines = 0
-    self.font = UIFont.systemFont(ofSize: 17.0)
+    self.font = UIFont.systemFont(ofSize: 19.0)
     self.adjustsFontSizeToFitWidth = true
   }
   

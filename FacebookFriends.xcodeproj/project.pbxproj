@@ -37,6 +37,7 @@
 		95B1E3A426DA7CA100B7526E /* BackButtonPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E3A326DA7CA100B7526E /* BackButtonPresentable.swift */; };
 		95B1E3A626DA891000B7526E /* DetailLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E3A526DA890F00B7526E /* DetailLabel.swift */; };
 		95B1E3A926DA9B4800B7526E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E3A826DA9B4800B7526E /* MapViewController.swift */; };
+		95B1E3AB26DB9FBD00B7526E /* MapViewCoordinateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E3AA26DB9FBD00B7526E /* MapViewCoordinateModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		95B1E3A326DA7CA100B7526E /* BackButtonPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButtonPresentable.swift; sourceTree = "<group>"; };
 		95B1E3A526DA890F00B7526E /* DetailLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLabel.swift; sourceTree = "<group>"; };
 		95B1E3A826DA9B4800B7526E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		95B1E3AA26DB9FBD00B7526E /* MapViewCoordinateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewCoordinateModel.swift; sourceTree = "<group>"; };
 		DEB5C3C84255DD461BA33C5A /* Pods-FacebookFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookFriends.debug.xcconfig"; path = "Target Support Files/Pods-FacebookFriends/Pods-FacebookFriends.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -225,6 +227,7 @@
 				95B1E39026D7D9F700B7526E /* GeneralResponseModel.swift */,
 				95B1E38E26D7D7BD00B7526E /* UserListResponseModel.swift */,
 				95B1E39226D7DA4400B7526E /* InfoResponseModel.swift */,
+				95B1E3AA26DB9FBD00B7526E /* MapViewCoordinateModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				95B1E39326D7DA4400B7526E /* InfoResponseModel.swift in Sources */,
 				95B1E38326D7D45300B7526E /* MainViewController.swift in Sources */,
 				95B1E38726D7D47C00B7526E /* MainViewModel.swift in Sources */,
+				95B1E3AB26DB9FBD00B7526E /* MapViewCoordinateModel.swift in Sources */,
 				95B1E38F26D7D7BD00B7526E /* UserListResponseModel.swift in Sources */,
 				95B1E3A426DA7CA100B7526E /* BackButtonPresentable.swift in Sources */,
 			);
