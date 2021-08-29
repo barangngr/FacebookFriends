@@ -13,7 +13,12 @@ class NetworkManager {
   
   static let shared = NetworkManager()
   private let reachabilityManager = NetworkReachabilityManager()
-  let provider = MoyaProvider<MultiTarget>()
+  private let cachePolicyPlugin = CachePolicyPlugin()
+  let provider: MoyaProvider<MultiTarget>
+  
+  private init() {
+    provider =  MoyaProvider<MultiTarget>(plugins: [cachePolicyPlugin])
+  }
   
   func request<T: Codable>(_ target: TargetType,
                            type: T.Type,
@@ -39,4 +44,10 @@ class NetworkManager {
     }
   }
   
+}
+
+extension MultiTarget: CachePolicyGettable {
+  var cachePolicy: URLRequest.CachePolicy {
+    return .returnCacheDataElseLoad
+  }
 }

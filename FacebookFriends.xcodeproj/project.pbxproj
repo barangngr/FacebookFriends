@@ -38,6 +38,7 @@
 		95B1E3A626DA891000B7526E /* DetailLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E3A526DA890F00B7526E /* DetailLabel.swift */; };
 		95B1E3A926DA9B4800B7526E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E3A826DA9B4800B7526E /* MapViewController.swift */; };
 		95B1E3AB26DB9FBD00B7526E /* MapViewCoordinateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E3AA26DB9FBD00B7526E /* MapViewCoordinateModel.swift */; };
+		95B1E3AD26DBB6AA00B7526E /* CachePolicyGettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B1E3AC26DBB6AA00B7526E /* CachePolicyGettable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		95B1E3A526DA890F00B7526E /* DetailLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLabel.swift; sourceTree = "<group>"; };
 		95B1E3A826DA9B4800B7526E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		95B1E3AA26DB9FBD00B7526E /* MapViewCoordinateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewCoordinateModel.swift; sourceTree = "<group>"; };
+		95B1E3AC26DBB6AA00B7526E /* CachePolicyGettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachePolicyGettable.swift; sourceTree = "<group>"; };
 		DEB5C3C84255DD461BA33C5A /* Pods-FacebookFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FacebookFriends.debug.xcconfig"; path = "Target Support Files/Pods-FacebookFriends/Pods-FacebookFriends.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -217,6 +219,7 @@
 			children = (
 				95B1E38B26D7D5DA00B7526E /* LoadingViewPresentable.swift */,
 				95B1E3A326DA7CA100B7526E /* BackButtonPresentable.swift */,
+				95B1E3AC26DBB6AA00B7526E /* CachePolicyGettable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 				95B1E35B26D7737E00B7526E /* LoginViewController.swift in Sources */,
 				95B1E39626D7DAF200B7526E /* MainCollectionViewCell.swift in Sources */,
 				95B1E38926D7D50500B7526E /* UINavigationBar.swift in Sources */,
+				95B1E3AD26DBB6AA00B7526E /* CachePolicyGettable.swift in Sources */,
 				95B1E37C26D778D100B7526E /* UIColor.swift in Sources */,
 				95B1E39126D7D9F700B7526E /* GeneralResponseModel.swift in Sources */,
 				95B1E38C26D7D5DA00B7526E /* LoadingViewPresentable.swift in Sources */,

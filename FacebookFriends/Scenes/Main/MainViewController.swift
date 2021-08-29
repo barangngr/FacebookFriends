@@ -55,7 +55,9 @@ class MainViewController: BaseUIViewController, LoadingViewPresentable {
   
   private func load() {
     startAnimating()
-    viewModel.fetchFriends()
+    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+      self.viewModel.fetchFriends()
+    }
   }
   
 }
